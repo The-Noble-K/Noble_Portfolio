@@ -8,7 +8,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">Noble's Portfolio</a>
+        <a class="navbar-brand" href="{% url 'project_index' %}">Jarod Noble's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,3 +34,47 @@
     {% block page_content %}{% endblock %}
 </div>
 
+<br><br>
+
+<footer class="section footer-classic context-dark bg-dark">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4">
+            <br>
+            <p>Made with Django & Python.</p>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>Noble</span><span> </span><span>No Rights Reserved...</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <br>
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>2140 Brentwood Rd, Raleigh, NC, 27604</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">jarod.sneed@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">(919)-218-9253</a> <span>or</span> <a href="tel:#">(808)-867-5309</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <br>
+          <h5>Links</h5>
+          <ul class="nav-list">
+            <li><a href="{% url 'project_index' %}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="{% url 'project_index' %}">Projects</a></li>
+            <li><a href="{% url 'blog_index' %}">Blog</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
