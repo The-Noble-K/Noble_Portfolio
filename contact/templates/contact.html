@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<br>
+<h1>Contact</h1>
+<br>
+<br>
+<h2>Jarod Noble Sneed</h2>
+<br>
+
+<div class="row">
+    <div class="col-md-6">
+        <h5>Gmail: </h5>
+            <p><a href='mailto:jarod.sneed@gmail.com'>jarod.sneed@gmail.com</a></p>
+        <br>
+        <h5>Phone: </h5>
+            <p>(919)-218-9253</p>
+        <br>
+        <h5>Github: </h5>
+            <p><a href="https://github.com/The-Noble-K">The-Noble-K</a></p>
+        <br>
+        <h5>LinkedIn: </h5>
+            <p><a href="https://www.linkedin.com/in/jarod-sneed-542064178/">Jarod Noble Sneed</a></p>
+        <br>
+        <a href="{% url 'project_index' %}" class="btn btn-primary">
+            Back
+        </a>
+    </div>
+    <div class="col-md-6">
+        <img src="{% static "/img/headshot.jpg" %}" alt="Jarod Sneed Headshot" width="100%">
+    </div>
+    
+</div>
+
+{% endblock %}
