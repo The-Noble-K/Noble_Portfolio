@@ -16,6 +16,10 @@
         <br>
         <h5>Github Link:</h5>
         <p><a href="{{ project.link }}">{{ project.title }}</a></p>
+        <br>
+        <a href="{% url 'project_index' %}" class="btn btn-primary">
+            Back
+        </a>
     </div>
 </div>
 {% endblock %}
