@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'bootstrap_themes',
     'projects',
     'blog',
-    'contact'
+    'contact',
+    'skills'
 ]
 
 MIDDLEWARE = [
