@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<br>
+<h1>Jarod Noble Sneed</h1>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static "/img/headshot.jpg" %}" alt="Jarod Sneed Headshot" width="100%">
+    </div>
+    <div class="col-md-6">
+        <br>
+        <h2>About Me</h2>
+        <br>
+        <p>I'm a self taught Developer, proficient in Python, Ruby and JavaScript. 
+            My experience is in web applications and game development, making several projects in Django, 
+            Flask, Ruby on Rails, React and Phaser. Some of my most recent projects have involved... 
+            <br>
+            <ul>
+                <li>This portfolio page built in Django and Python</li>
+                <li>A Wikipedia style page built in Ruby on Rails using Sqlite3</li>
+                <li>A recipe app using Rails as an API with a React.js front end</li>
+                <li>Several game design and animation projects in Phaser.io </li>
+                <li>Designing logo and album cover for musical side project</li>
+                <li>A script that automatically posts commits to GitHub</li>
+                <li>Updated CLI to oh-my-zsh, customized .zshrc file</li>
+                <li>Started using Vim, customized .vimrc file</li>
+            </ul>
+            <br>
+            I'm Looking to join a supportive team where I can contribute my strengths in Python, 
+            JavaScript and Ruby on Rails. I enjoy finding and fixing bugs, solving problems and 
+            setting up MVC structured web applications forms and view pages.
+        </p>
+        <br>
+        <a href="{% url 'project_index' %}" class="btn btn-primary">
+            Projects
+        </a>
+        <a href="{% url 'blog_index' %}" class="btn btn-primary">
+            Blog
+        </a>
+        <a href="{% url 'contact' %}" class="btn btn-primary">
+            Contact
+        </a>
+        <a href="{% url 'skill_index' %}" class="btn btn-primary">
+            Skills
+        </a>
+    </div>
+</div>
+
+{% endblock %}
